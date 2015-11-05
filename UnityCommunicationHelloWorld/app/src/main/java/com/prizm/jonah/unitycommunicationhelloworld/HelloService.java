@@ -33,6 +33,7 @@ public class HelloService extends Service {
     private Runnable sendData = new Runnable() {
         //specific method that's executed by handler
         public void run() {
+
             numIntent++;
             Message temp_msg = new Message();
             temp_msg.obj = "Num intent: " + String.valueOf(numIntent);
